@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+
+    <EditText
+        android:id="@+id/naziv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite naziv"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/opis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite opis"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/adresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite adresu"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/cena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite cenu"
+        android:inputType="number|numberDecimal"/>
+
+    <EditText
+        android:id="@+id/broj_telefona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite broj telefona"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/kvadratura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite kvadraturu" />
+
+    <EditText
+        android:id="@+id/brojSoba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite broj soba"
+        android:inputType="text" />
+
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btn_izaberi"
+            android:layout_alignBottom="@id/btn_izaberi"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:text="Slika   " />
+
+        <Button
+            android:id="@+id/btn_izaberi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/preview_image1"
+            android:layout_alignBottom="@id/preview_image1"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/text"
+            android:gravity="center"
+            android:text="Izaberi" />
+
+
+        <ImageView
+            android:id="@+id/preview_image1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/btn_izaberi"
+            android:foregroundGravity="center_horizontal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_atrakcija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodaj" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odustani" />
+
+    </LinearLayout>
+
+</LinearLayout>

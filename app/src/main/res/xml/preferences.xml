@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="obavestavanje"
+        android:title="Nacin obavestavanja">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/toast_key"
+            android:summary="Bicete obavesteni putem Toast poruka"
+            android:title="Toast poruke" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/notif_key"
+            android:summary="Bicete obavesteni putem Notifikacija"
+            android:title="Notifikacije" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
